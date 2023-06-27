@@ -438,7 +438,7 @@ body.offcanvas {
 }
 
 .project-card {
-  background-color: #fff;
+  background-color: white;
   border-radius: 11px;
   box-shadow: 0 3px 10px var(--primary-shadow);
   padding: 20px;
