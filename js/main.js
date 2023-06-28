@@ -308,3 +308,19 @@
 
 
 }());
+
+// Get all the project links
+const projectLinks = document.querySelectorAll('.project-link');
+
+// Attach click event listeners to each link
+projectLinks.forEach(link => {
+  link.addEventListener('click', (event) => {
+    const url = event.currentTarget.getAttribute('data-url');
+    window.location.href = url; // Redirect to the specified URL
+  });
+});
+
+function navigateTo(url) {
+	window.location.href = url; // Redirect to the specified URL
+  }
+  
