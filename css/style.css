@@ -405,8 +405,10 @@ body.offcanvas {
 }
 
 .project-pic {
-  width: 65%;
-  height: 60%;
+  width: 85%;
+  height: 80%;
+  border-radius: 12px;;
+
 }
 
 .projects-container {
@@ -417,6 +419,7 @@ body.offcanvas {
 .projects-title {
   text-align: center;
   margin-bottom: 1rem;
+  margin-top: 2rem;
 }
 
 .project-container {
@@ -439,15 +442,20 @@ body.offcanvas {
 
 .project-card {
   background-color: white;
-  border-radius: 11px;
+  border-radius: 20px;
   box-shadow: 0 3px 10px var(--primary-shadow);
   padding: 20px;
   margin: 10px;
+  width: 250px;
+  height: 150px;
+  
 }
 
 .profile-heading {
   font-size: 18px;
-  margin-bottom: 4em;
+  margin-top: 5px;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 5px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -1433,7 +1441,16 @@ body.offcanvas {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s; }
-  @media screen and (max-width: 768px) {
+
+
+.project-card:hover .project-pic {
+    transform: scale(1.1);
+  }
+.project-card:hover .project-details {
+    opacity: 1;
+  }
+
+@media screen and (max-width: 768px) {
     .profile-nav-toggle {
       opacity: 1;
       visibility: visible; } }
