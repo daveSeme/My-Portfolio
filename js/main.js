@@ -324,3 +324,48 @@ function navigateTo(url) {
 	window.location.href = url; // Redirect to the specified URL
   }
   
+
+  $(document).ready(function() {
+	$("#contactForm").submit(function(event) {
+	  event.preventDefault(); // Prevent the form from submitting normally
+  
+	  // Get form values
+	  var name = $("#name").val();
+	  var email = $("#email").val();
+	  var subject = $("#subject").val();
+	  var message = $("#message").val();
+  
+	  // You can perform validation on the form values here
+  
+	  // Create an object with the form data
+	  var formData = {
+		name: name,
+		email: email,
+		subject: subject,
+		message: message
+	  };
+  
+	  // Send the form data to the server-side script
+	  $.ajax({
+		type: "POST",
+		url: "send_email.php", // Replace with the URL of your server-side script
+		data: formData,
+		success: function(response) {
+		  // Handle the response from the server-side script
+		  if (response.success) {
+			// Display success message
+			$("#contactForm").hide();
+			$("#successMessage").show();
+		  } else {
+			// Display error message
+			alert("Error: " + response.message);
+		  }
+		},
+		error: function() {
+		  // Display error message
+		  alert("An error occurred while sending the form data.");
+		}
+	  });
+	});
+  });
+  
