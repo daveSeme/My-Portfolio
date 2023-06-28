@@ -235,51 +235,61 @@
 				</div>
 			</section>
 			
-			<div id="profile-counter" class="profile-counters" style="background-image: url(images/cover_bg_1.jpg);" data-stellar-background-ratio="0.5">
-				<div class="overlay"></div>
+			<section>
+				<div class="overlay"></div><div id="profile-counter" class="profile-counters" style="background-image: url(images/cover_bg_1.jpg);" data-stellar-background-ratio="0.5">
 				
 				<div class="profile-narrow-content">
 
 					<div class="projects-container">
-						<div class="project-container project-card">
-						  <img
-							src="images/feeds.png"
-							alt="feeds profile"
-							loading="lazy"
-							class="project-pic"
-						  />
-						  <span class="heading-meta project-link" data-url="https://ndinyafeeds.netlify.app">NDINYA FEEDS SITE</span>
-						</div>
-						<div class="project-container project-card">
-						  <img
-							src="images/gateway.png"
-							alt="gateway site"
-							loading="lazy"
-							class="project-pic"
-						  />
-						  <span class="heading-meta project-link" data-url="https://jccgatewaydemo.netlify.app">Church Website</span>
-						</div>
-						<div class="project-container project-card">
-						  <img
-							src="images/ghosthunter.png"
-							alt="ghosthuntergame"
-							loading="lazy"
-							class="project-pic"
-						  />
-						  <span class="heading-meta project-link" data-url="https://ghosthuntergame.netlify.app">Ghost Hunter Game</span>
-						  <p class="project-details"></p>
-						</div>
-					  </div>
-					  
+					<div class="project-container project-card" onclick="navigateTo('https://ndinyafeeds.netlify.app')">
+						<img
+						src="images/feeds.png"
+						alt="feeds profile"
+						loading="lazy"
+						class="project-pic"
+						/>
+						<span><h2 class="heading-meta">Animal Feeds Site</h2>
+							<p class="project-details"></p>
+						</span>
+						
+					</div>
+					<div class="project-container project-card" onclick="navigateTo('https://jccgatewaydemo.netlify.app')">
+						<img
+						src="images/gateway.png"
+						alt="gateway site"
+						loading="lazy"
+						class="project-pic"
+						/>
+						<span>
+							<h2 class="heading-meta">CHURCH SITE</h2>
+							<p class="project-details"></p>
+						</span>
+					</div>
+					<div class="project-container project-card" onclick="navigateTo('https://ghosthuntergame.netlify.app/')">
+						<img
+						src="images/ghosthunter.png"
+						alt="ghosthuntergame"
+						loading="lazy"
+						class="project-pic"
+						/>
+						<span>
+							<h2 class="heading-meta">Ghost Hunter Game</h2>
+							<p class="project-details"></p>
+						</span>
+						
+					</div>
+					</div>
+
 					
 				</div>
 			</div>
+
+		</section>	
 
 			<section class="profile-skills" data-section="skills">
 				<div class="narrow-content">
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">My Speciality</span>
 							<h2 class="profile-heading animate-box">My Skills</h2>
 						</div>
 					</div>
@@ -309,18 +319,21 @@
 				<div class="container" data-section="education">
 					
 					<div class="row">
+						<div class="row">
+							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+								
+								<h2 class="profile-heading animate-box">EDUCATION</h2>
+							</div>
+						</div>
 						<div class="col-md-12 col-md-offset-0">
 							<ul class="timeline">
 					
-								<li class="timeline-heading text-center animate-box">
-									<div><h3>Education</h3></div>
-								</li>
-								
+												
 								<li class="animate-box timeline-unverted">
 									<div class="timeline-badge"><i class="icon-briefcase"></i></div>
 									<div class="timeline-panel">
 										<div class="timeline-heading">
-											<h3 class="timeline-title">Bachelors Degree</h3>
+											<span class="heading-meta">Bachelors Degree</span>
 											<span class="company">The Co-operative Unversity of Kenya <br>(September 2019 - May 2023)</span>
 										</div>
 										<div class="timeline-body">
@@ -332,7 +345,7 @@
 									<div class="timeline-badge"><i class="icon-briefcase"></i></div>
 									<div class="timeline-panel">
 										<div class="timeline-heading">
-											<h3 class="timeline-title">K.C.S.E</h3>
+											<span class="heading-meta">Secondary Education(k.c.s.e)</span>
 											<span class="company">Vihiga High School<br>(January 2015 - November 2018)</span>
 										</div>
 										<div class="timeline-body">
@@ -344,7 +357,7 @@
 									<div class="timeline-badge"><i class="icon-briefcase"></i></div>
 									<div class="timeline-panel">
 										<div class="timeline-heading">
-											<h3 class="timeline-title">Primary</h3>
+											<span class="heading-meta">Primary Education</span>
 											<span class="company">Hambale Primary School<br>(January 2006 - November 2014)</span>
 										</div>
 										<div class="timeline-body">
